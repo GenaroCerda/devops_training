@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset> <!--Acomoda los cambios que estén entre las etiquetas-->
+            <legend>Pizzas Information</legend> <!--Da el nombre a los inputs dentro del mismo fieldset-->
+            <div>
+                <label for="name">Nombre del clientes</label> <!--Titulo que tendrá el input-->
+                <input type="text" id="name" name="name" required placeholder="Ingres tu nombre papi">
+            </div>
+
+            <div>
+            <!--Los atributos "id" y "for" sirven para establecer que los datos de entrada serán asignados al label con el mismo "id"-->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <!--Los div cada que se cierran y abren sirven para separar los segmentos-->  
+        </fieldset>
+
+        <fieldset>
+            <legend>Personaliza tu Pizza</legend>
+            <div>
+                <label>Tipo de Pizza</label>
+                <select> <!--Sirve para mostrar una lista pre definida al usario.-->
+                    <!--El atributo "value" sirve para que el backedn sepa que valor fue el que el usario selecciones en el frontend-->
+                    <option value="">-- Seleccion el tipo de Pizza --</option>
+                    <option value="hawaiana">Hawaina</option> <!--con la etiqueta option puedes agregar un valor a la lista que se desplegará al usuario-->
+                    <option value="mexicana">Mexicana</option>
+                </select>
+            </div>
+            <div>
+                <label>Indicaciones especiales</label>
+                <textarea></textarea> <!--Permite introducir textos largos-->
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>

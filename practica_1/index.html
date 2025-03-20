@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ALEMAN</h1>
+    <p>Willkommen zum Grundkurs Deutsch!</p>
+    <h2>Erste Lektion</h2>
+    <p>Zuerst musst du die <span>Pronomen</span> lernen, im folgenden Link findest du die Informationen, die du studieren sollst</p>
+    <a href="https://www.alemansencillo.com/pronombres-en-aleman">Pronomen</a>
+    <div>
+        <h3>Personalpronomen im Nominativ</h3>
+        <ul>
+            <li>ich -> yo</li>
+            <li>du -> tú</li>
+            <li>er -> él</li>
+            <li>sie -> ella</li>
+            <li>es -> ello</li>
+            <li>wie -> nosotros</li>
+            <li>ihr -> vosotros</li>
+            <li>sie -> ellos</li>
+            <li>Sie -> usted</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Personalpronomen im Akkusativ</h3>
+        <ol>
+            <li>ich -> mich</li>
+            <li>du -> dich</li>
+            <li>er -> ihn</li>
+            <li>sie -> sie</li>
+            <li>es -> es</li>
+            <li>wir -> uns</li>
+            <li>ihr -> euch</li>
+            <li>sie -> sie</li>
+            <li>Sie -> Sie</li>
+        </ol>
+    </div>
+
+    <div>
+        <h3>Dativ und Genetiv Tabele</h3>
+        <img src="img\datundgen.jpg">
+    </div>
+
+    <div>
+        <h3>Farben</h3>
+        <a href="farbe.html">Klicken Sie hier, um die Farben auf Deutsch kennenzulernen</a>
+    </div>
+
+    <h3>FORMULARIO</h3>
+    <div>
+        <form>
+            <fieldset>
+                <legend>Kleine Prüfung Nummer 1</legend>
+                <div>
+                    <label for="pron">Como dices "Nosotros" en Aleman, escribelo en el campo</label>
+                    <input type="text" id="pron">
+                </div>
+                <div>
+                    <label for="farb">Selecciona el color "Gelb"</label>
+                    <input type="color" id="farb" name="farb" />
+                </div>
+                <div>
+                    <label for="start">Wählen Sie Ihren Geburtsmonat und Ihr Geburtsjahr aus.</label>
+                    <input type="month" id="start" name="start" min="1925-01"/>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div>
+        <form>
+            <fieldset>
+                <legend>Persönliche Informationen.</legend>
+                <div>
+                    <label for="name">Geben Sie Ihren vollständigen Namen ein.</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="id">Fügen Sie einen Ausweis bei.</label>
+                    <input type="file">
+                </div>
+                <div>
+                    <label for="telefon">Fügen Sie Ihre Telefonnummer hinzu.</label>
+                    <input type="telefon" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <input type="submit" value="senden">
+</body>
+</html>
