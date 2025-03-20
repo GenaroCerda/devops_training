@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <!--El atributo border sirve para crear un margen en la tabla-->
+    <!--El atributo cellpadding sirve para dar un espacio entre el texto y el borde de la tabla-->
+    <table border="1" cellpadding="5"> 
+        <!--El atributo "bgcolor" sirve para darle color al background de la tabla-->
+        <caption>PAISES CON POBLACION E IDIOMA</caption> <!--Etiqueta caption le da el titulo a a la tabla-->
+        <thead bgcolor="blue"> <!--Definir el segmento de cabecera-->
+            <tr> <!--Definir la Fila donde irán los encabezadoa-->
+                <!--Definimos el contendio de cada encabezado, en este caso son 3-->
+                <!--th sirve solo para los encabezados de cada columna, cada th que se abre y se cierra es una nueva columna-->
+                <th>Paises</th>
+                <th>Población</th> 
+                <th>Idioma</th> 
+            </tr>
+        </thead>
+        <!--El atributo align es para acomodar el texto, puede ser left (default), right o center -->
+        <tbody align="center"> <!--Definir el segmento que sera el cuerpo de la tabla-->
+            <tr> <!--Definimos la primera columna de la tabla, irá bajo el primer th que creamos-->
+                <!--Definiremos que contenido irá en horizontal en la primera fila-->
+                <!--Cada que td se abre y se cierra es una nueva Columna en la primera Fila-->
+                <td>México</td>
+                <td>130 millones</td>
+                <td>Español</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+                <td>59 millones</td>
+                <td>Italiano</td>
+            </tr>
+            <tr>
+                <td>Alemania</td>
+                <td>84 millones</td>
+                <td>Aleman</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
