@@ -1,0 +1,22 @@
+header {
+    padding: 20px 40px; /**Padding es el espacio entre el border y el contenido */
+    border: 2px dotted #666666; /*Border es el espacio ente el padding y el marging*/
+}
+
+header .img_logo {
+    width: 200px;
+}
+
+header nav {
+    display: inline-block; /*Nos permite cambiar el default del elemento ya sea en linea o de bloque*/
+    float: right; /*Forza al elemento para ponerlo en otro lado*/
+    padding-top: 45px; /*Agrega un espacio entre el border superior y el elemento*/
+}
+
+header nav a {
+    margin: 0 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    
+}

@@ -1,0 +1,51 @@
+p {
+    color: rgb(255, 0, 0);
+    /*Da color al texto que este dentro de <p>*/
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* El tipo de letra se define asi, primero intenta Arial*/
+    /* Si Arial falla intenta Helvetica, y asi va hasta que pueda usar una*/
+    /* serif es un tipo de letra que que tiene una linea extrta al final de algunas letras*/
+    font-family: "Bitcount Grid Double", system-ui;
+    /* Font que viene de google fonts y definimos en el HTML */
+    text-align: center;
+    /* Alineamos el text, por default viene siempre a la izquierda. tiene left, right, center o justify como posibles valores */
+    letter-spacing:10px;
+    /* deja un espaciado entre letra y letra definido en pixele */
+    text-decoration: none;
+    /* decora el texto, como subrayado*/
+    text-transform: capitalize;
+    /*Pone por default la primera letra como mayuscula*/
+    line-height: 3;
+    /*Da un espacio entre la lineas del texto, su valor es numerico*/
+    word-spacing: 10px;
+    /* da un espacio entre palabras, su valor es en pixeles */
+    text-shadow:10px 10px 15px#000;
+    /*Da una sombra al text, tienes que darl 4 valores, para ejex, ejey, el blur y color*/
+}
+/*Selectro html*/
+html {
+    font-size: 20px;
+}
+
+main {
+    width: 90%; /*Solo le daremos el 90% de la pantalla*/
+    background-color: rgb(241, 237, 237);
+    font-size: 15px;
+}
+
+.container-a {
+    width: 500px; /*Ancho, px unidad absoluta*/
+    height: 1rem; /* Es relativo al font-size del HTML*/
+    background-color: aqua; /*Color al fondo*/
+    border: 2px solid blue; /*Tamaño y color del borde del contenedor*/
+    margin-bottom: 20px; /**/
+    display: inline-block;
+}
+
+.container-b {
+    width: 100%; /*Con el 100%, abarca el 100% de su padre <main> es una unidad relativa*/
+    height: 1em; /* 1em valdria 15px, es relativo al font size del padre */
+    background-color: green;
+    display: inline-block;
+    font-size: 2em; /* 2 por 15, 30px*/
+}

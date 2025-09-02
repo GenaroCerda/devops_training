@@ -1,0 +1,137 @@
+body {
+    width: 100%; /*Body usara toda la pagina*/
+    font-size: 15px; /*Tamaño estandar d letra*/
+    font-weight: 300; /*Que tan gruesa sera la letra*/
+    color: #3b3838; /*Color del texto de Body*/
+    font-family: "Lexend", Arial, Helvetica, sans-serif; /*Tipo de letra*/
+    margin: 0; /*No deja espacio entre el borde de la pantalla y el border*/
+}
+
+img {
+    width: 100px;
+}
+
+header {
+    width: 100%; /*Este widht va a sobreescribir el de body, ya que tiene mas prioridad por el orden del texto*/
+    padding: 20px 50px; /*El padding es de 20px arriba y abajo y 50px a los lados*/
+    background-color: #000000;
+    display: flex;
+    /*Vamos a acomodar el header en el eje X*/
+    /*Da un espacio entre el contenido del contenedor*/
+    justify-content: space-between;
+    /*Alineamos al centro en el eje de las X*/
+    align-items: center;
+    /*Que ocupe el tamaño de todo el contenedor*/
+    box-sizing: border-box;
+}
+
+header i {
+    width: 50px; /*El tamaño de los iconos que sobreescribe el de la imagenes de arriba por prioridad*/
+    cursor: pointer; /* Al poner el mous sobre el icono, el apuntador cambia*/
+    display: inline;
+}
+
+.banner { /*Estilos de la section de la clase banner*/
+    width: 100%; /*Usa toda la pagina*/
+    padding: 60px 0px; /*Margen de ariiba y abajo y derecha e izq*/
+    text-align: center; /*Alineamos el texto en el centro*/
+    background-image: url(../img/addidas_banner.png); /*Al fondo habra una imagen*/
+    background-repeat: no-repeat; /*No repetir la imagen dle background*/
+    background-size: cover; /*No importa el tamano de la imagen, solo que cubra el contenedor*/
+    background-position-y: 60%; /*Recorremos en el eje Y la imagen dle backgrond*/
+}
+
+.banner h2 { /*El encabezado de la seccioncon clase banner*/
+    width: 100%;  /*Toda la pagina*/
+    font-weight: 600; /*Grosor de la letra*/
+    font-size: 30px; /* Tamaño de la letra*/
+    margin: 10px; /*Un pequeno espacio entra el fin de la pantalla y el border*/
+}
+
+.banner p {
+    width: 100%; /*Pixeles de la pantalla que usara*/
+    margin: 0 auto; /*Para posicionarlo en el centro*/
+    font-size: 25px; /*Tamano de letra*/
+    opacity: 0.7; /*Opacidad al elemento*/
+}
+
+.products {
+    width: 1100px;
+    margin: 0 auto; /*Centrarlo*/
+    color: black;
+    padding: 20px;
+    box-sizing: border-box; /*Usando como input el width y el padding calcula el tamaño*/
+    display: grid;
+    /*Definimos las columnas*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+}
+
+.products article {
+    cursor: pointer;
+    text-align: center;
+}
+
+.products img {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.products h2 {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.products p {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.cart {
+    width: 500px;
+    background-color: #fff;
+    padding: 25px;
+    box-sizing: border-box;
+    height: 1000%;
+    position: fixed;
+    right: 0%;
+    top: 100px;
+    box-shadow: -19px -1px 22px -15px rgba(0,0,0,0.30);
+}
+
+.cart h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 25px 0;
+    box-sizing: border-box;
+}
+
+.cart div {
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.cart img {
+    width: 60px;
+
+}
+
+.cart div p:nth-child(3) {
+    font-weight: 500;
+
+}
+
+.cart div i {
+    width: 25px;
+    cursor: pointer;
+}
+
+.cart .delete-icon {
+    width: 100%;
+}

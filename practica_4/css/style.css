@@ -1,0 +1,116 @@
+* { /*Selector universal, toda la pagina tendra el mismo font*/
+    font-family: "Oswald", sans-serif;
+    padding: 1px;
+}
+
+section { /*Selector de elemento*/ 
+    background-color: #c5c1c1;
+    width: 100%;
+    text-align: center;
+}
+
+.history-banner { /*Selector de clase*/
+    background-color: #ffffff; /*El backgorund color de arriba no afecta ya que selector de Clase tiene mayot jerarquia*/
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px 20px 20px; /*Padding que se aplica ya que tiene mas prioridad que el universal*/
+}
+
+header {
+    padding: 10px 40px 40px 40px;  /*Unidad Absoluta para dar espacio entre el Content y el border 10px arriba, 40px derecha, 40px abajo, 40px izquierda*/
+    text-align: center; /*Propiedad de Text para alinear al centro*/
+    background-image: url(../img/BAYERN.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 40%;
+    text-shadow:10px 10px 15px#000; /*Propiedad que da sombra al texto*/
+}
+
+h1, h2 { /*Todos los encabezados iran centrados*/
+    text-align: center;
+}
+
+header nav{
+    display: inline;
+    float: right;
+    text-shadow:10px 10px 15px#000;
+}
+
+
+#video, #audio, #i-frame, #table { /*Selectores Multiples y de ID*/
+    display: inline-block;
+    width: 49%;
+}
+
+#video > section, #audio > section, #i-frame > section {
+    background-color: #ffffff;
+}
+
+#audio {
+    position: relative;
+    top: -320px;
+    left: -5px;
+}
+
+#i-frame {
+    display: inline;
+    float: right;
+    position: relative;
+    top: -320px;
+    left: -10px;
+}
+
+#table > img {
+    margin-left: 150px;
+}
+
+aside {
+    text-align: center;
+    padding: 100px;
+    background-image: url(../img/die-farben.jpg);
+    background-position-y: 40%;
+    background-position-x: 55%;
+    background-repeat: no-repeat;
+}
+
+a:hover { /*Pseudo Clase*/
+    font-weight: bold;
+}
+
+aside > a:visited  {
+    color: #e41212;
+}
+
+footer {
+    background-color: beige;
+}
+
+input[type="color"]:hover { /*Selector de atributo */
+    cursor: pointer;
+}
+
+input[type="submit"]:hover { /*Selector de atributo */
+    cursor: pointer;
+}
+
+footer small article form fieldset legend {
+    text-align: center; /*Propiedad de Text para alinear al centro*/
+
+}
+
+footer small article form fieldset {
+    padding: 10px 10px 10px 10px;  /*Unidad Absoluta para dar espacio entre el contente y el border 10px arriba, 10px derecha, 10px abajo, 10px izquierda*/
+    border: 4px double #666666; /*Border es el espacio ente el padding y el marging*/
+
+}
+
+.form1 > :first-child { /*Aplica solo al primer elemento que es el legend*/
+    color: #a00707;
+    font-weight: 900;
+}
+
+
+.form2 > :first-child {  /*Aplica solo al primer elemento que es el legend*/
+  color: blue;
+  font-weight: 900;
+}

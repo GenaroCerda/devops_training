@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lernt Deutsch</title>
+</head>
+<body>
+    <header> 
+        <h1><em>Sprachschule Bayern</em></h1> <!--<em></em> Tag de Elemento Variado--> 
+        <p>Willkommen zum Grundkurs Deutsch!</p>
+        <nav>
+            <a href="Preise.html">Preise &#36;</a> <!--Entidad HTML Dollar Sign-->
+            <a href="Kontakt.html">Kontakt &#9742;</a> <!--Entidad HTML Telephone-->
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="history-banner">
+                <p>Unsere Geschichte beginnt in Bayern Seit über 35 Jahren vermittelt unsere Sprachschule mit Sitz in Bayern die deutsche Sprache mit Leidenschaft und Qualität. Was einst als kleines Familienunternehmen begann, hat sich zu einer modernen Online-Plattform entwickelt, die Lernende weltweit erreicht. Unsere Kurse bieten flexible, interaktive Lernmethoden mit erfahrenen Lehrkräften – direkt aus dem Herzen Bayerns. Tauchen Sie mit uns ein in die deutsche Sprache und Kultur, bequem von zu Hause aus</p>
+            </section>
+            <hr>
+            <section>
+                <h2>Grundkenntnisse</h2>
+                <p>Zuerst musst du die Pronomen lernen, im folgenden Link findest du die Informationen, die du studieren sollst</p> <!-- <br> Tag de Elemento variado <br>-->
+                <nav>
+                    <a href="https://www.alemansencillo.com/pronombres-en-aleman">Pronomen</a>
+                </nav>
+            </section>
+            <section>
+                <h2>Personalpronomen im Nominativ</h2>
+                <ul> <!--Tag de Elementos Variado-->
+                    <li>ich &gt; yo</li>
+                    <li>du &gt tú</li>
+                    <li>er &gt él</li>
+                    <li>sie &gt ella</li>
+                    <li>es &gt ello</li>
+                    <li>wie &gt nosotros</li>
+                    <li>ihr &gt vosotros</li>
+                    <li>sie &gt ellos</li>
+                    <li>Sie &gt usted</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Personalpronomen im Akkusativ</h2>
+                <ul>
+                    <li>ich &gt mich</li>
+                    <li>du &gt dich</li>
+                    <li>er &gt ihn</li>
+                    <li>sie &gt sie</li>
+                    <li>es &gt es</li>
+                    <li>wir &gt uns</li>
+                    <li>ihr &gt euch</li>
+                    <li>sie &gt sie</li>
+                    <li>Sie &gt Sie</li>
+                </ul>
+            </section>
+        </article>
+        <hr>
+        <h1>Multimediale Inhalte</h1>
+        <article id="video">
+            <h2>Das Alphabet video</h2>
+            <section>
+                <video controls width="500"> <!--Agregar aqui controls es para ver los  controles del video, pausa, play, audio, etc.-->
+                    <source src="assests/deutsche-alpahbet.mp4" type="video/mp4">
+                </video>
+            </section>
+        </article>
+        <article id="audio">
+            <h2>Das alphate audio</h1>
+            <section>
+                <audio src="assests/dasdeutsche_alphabet.mp3" controls></audio> <!--Sirve igual que video, puedes agregar un reproductor de audio-->
+            </section>
+        </article>
+        <article id="i-frame">
+            <h2>A1 Video</h2>
+            <section> <!-- Ifram sirve para mostras sitios web dentro de nuestro sitio web-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4-eDoThe6qo?si=T7tdKM4FvGrKoHT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </article>
+        <article id="table">
+                <h2>Dativ und Genetiv Tabele</h2>
+                <img src="img/datundgen.jpg">
+        </article>
+        <aside>
+                <h2>Farben</h2>
+                <a href="farbe.html">Klicken Sie hier, um die Farben auf Deutsch lernen</a>
+        </aside>
+    </main>
+    <hr> <!--Tag de Elemento variado-->
+    <footer>
+    <small>
+        <h2>Formular</h2>
+        <article>
+            <form>
+                <fieldset class="form1">
+                    <legend>Kleine Prüfung Nummer 1</legend>
+                    <section>
+                        <label for="pron">Como dices "Nosotros" en Aleman, escribelo en el campo</label>
+                        <input type="text" id="pron">
+                    </section>
+                    <section>
+                        <label for="farb">Selecciona el color "Gelb"</label>
+                        <input type="color" id="farb" name="farb" />
+                    </section>
+                    <section>
+                        <label for="start">Wählen Sie Ihren Geburtsmonat und Ihr Geburtsjahr aus.</label>
+                        <input type="month" id="start" name="start" min="1925-01"/>
+                    </section>
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <form>
+                <fieldset class="form2">
+                    <legend>Persönliche Informationen.</legend>
+                    <section>
+                        <label for="name">Geben Sie Ihren vollständigen Namen ein.</label>
+                        <input type="text" id="name">
+                    </section>
+                    <section>
+                        <label for="id">Fügen Sie einen Ausweis bei.</label>
+                        <input type="file" id="id">
+                    </section>
+                    <section>
+                        <label for="telefon">Fügen Sie Ihre Telefonnummer hinzu.</label>
+                        <input type="telefon" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                    </section>
+                </fieldset>
+                <input type="submit" value="senden">
+            </form>
+
+            <p>&copy; 2025 Nombre del Sitio. Todos los derechos reservados.</p> <!--Entidad HTML Copyright-->
+        </article>
+        </footer>
+    </small> <!--Tag de Elemento variado-->
+</body>
+</html>

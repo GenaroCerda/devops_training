@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lernt Deutsch</title>
+</head>
+<body>
+    <header> 
+        <svg  width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 120" xml:space="preserve"><path fill="#D8D8D8" d="M-950-740h2180V960H-950z"/><g/><g/><g/><g/><path fill="#1E1D1D" d="M0 0h130v39H0z"/><path fill="#DC4437" d="M0 39h130v42H0z"/><path fill="#FCBE1F" d="M0 81h130v39H0z"/><g/></svg>
+        <h1><em>Sprachschule Wurdigkeit</em></h1> <!--<em></em> Tag de Elemento Variado--> 
+        <p>Willkommen zum Grundkurs Deutsch!</p>
+
+        <nav>
+            <a href="Preise.html">Preise &#36;</a> <!--Entidad HTML Dollar Sign-->
+            <a href="Kontakt.html">Kontakt &#9742;</a> <!--Entidad HTML Telephone-->
+        </nav>
+
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Grundkenntnisse</h2>
+                <p>Zuerst musst du die <b>Pronomen</b> lernen <!--<b> Tag de Elemento Variado-->, im folgenden Link findest du die Informationen,<br> die du studieren sollst</p> <!-- <br> Tag de Elemento variado <br>-->
+                <nav>
+                    <a href="https://www.alemansencillo.com/pronombres-en-aleman">Pronomen</a>
+                </nav>
+            </section>
+            <section>
+                <h2>Personalpronomen im Nominativ</h2>
+                <ul> <!--Tag de Elementos Variado-->
+                    <li>ich -> yo</li>
+                    <li>du -> tú</li>
+                    <li>er -> él</li>
+                    <li>sie -> ella</li>
+                    <li>es -> ello</li>
+                    <li>wie -> nosotros</li>
+                    <li>ihr -> vosotros</li>
+                    <li>sie -> ellos</li>
+                    <li>Sie -> usted</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Personalpronomen im Akkusativ</h3>
+                <ul>
+                    <li>ich -> mich</li>
+                    <li>du -> dich</li>
+                    <li>er -> ihn</li>
+                    <li>sie -> sie</li>
+                    <li>es -> es</li>
+                    <li>wir -> uns</li>
+                    <li>ihr -> euch</li>
+                    <li>sie -> sie</li>
+                    <li>Sie -> Sie</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h2>Das Alphabet video</h2>
+            <section>
+                <video controls width="100"> <!--Agregar aqui controls es para ver los  controles del video, pausa, play, audio, etc.-->
+                    <source src="assests/deutsche-alpahbet.mp4" type="video/mp4">
+                </video>
+            </section>
+        </article>
+        <article>
+            <h1>Das alphate audio</h1>
+            <section>
+                <audio src="assests/dasdeutsche_alphabet.mp3" controls></audio> <!--Sirve igual que video, puedes agregar un reproductor de audio-->
+            </section>
+        </article>
+        <article>
+            <h1>A1 Video</h1>
+            <section> <!-- Ifram sirve para mostras sitios web dentro de nuestro sitio web-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4-eDoThe6qo?si=T7tdKM4FvGrKoHT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+        </article>
+        <aside>
+            <hgroup>
+                <h2>Dativ und Genetiv Tabele</h2>
+                <img src="img\datundgen.jpg">
+
+                <h2>Farben</h2>
+                <a href="farbe.html">Klicken Sie hier, um die Farben auf Deutsch kennenzulernen</a>
+            </hgroup>
+        </aside>
+    </main>
+    <hr> <!--Tag de Elemento variado-->
+    <footer>
+    <small>
+        <h2>Formular</h2>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Kleine Prüfung Nummer 1</legend>
+                    <section>
+                        <label for="pron">Como dices "Nosotros" en Aleman, escribelo en el campo</label>
+                        <input type="text" id="pron">
+                    </section>
+                    <section>
+                        <label for="farb">Selecciona el color "Gelb"</label>
+                        <input type="color" id="farb" name="farb" />
+                    </section>
+                    <section>
+                        <label for="start">Wählen Sie Ihren Geburtsmonat und Ihr Geburtsjahr aus.</label>
+                        <input type="month" id="start" name="start" min="1925-01"/>
+                    </section>
+                </fieldset>
+            </form>
+        </article>
+
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Persönliche Informationen.</legend>
+                    <section>
+                        <label for="name">Geben Sie Ihren vollständigen Namen ein.</label>
+                        <input type="text" id="name">
+                    </section>
+                    <section>
+                        <label for="id">Fügen Sie einen Ausweis bei.</label>
+                        <input type="file">
+                    </section>
+                    <section>
+                        <label for="telefon">Fügen Sie Ihre Telefonnummer hinzu.</label>
+                        <input type="telefon" id="telefon" name="telefon" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+                    </section>
+                </fieldset>
+                <input type="submit" value="senden">
+            </form>
+
+            <p>&copy; 2025 Nombre del Sitio. Todos los derechos reservados.</p> <!--Entidad HTML Copyright-->
+        </article>
+        </footer>
+    </small> <!--Tag de Elemento variado-->
+</body>
+</html>

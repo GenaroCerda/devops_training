@@ -1,0 +1,76 @@
+header {
+    background-color: #fafafa;
+    padding: 10px 40px 40px 40px;  /*Unidad Absoluta para dar espacio entre el Content y el border 10px arriba, 40px derecha, 40px abajo, 40px izquierda*/
+    font-family: "Oswald", sans-serif;
+    text-align: center; /*Propiedad de Text para alinear al centro*/
+}
+
+
+header svg {
+    width: 100px;
+    text-align: center;
+}
+
+header h1 {
+    display: inline;
+    background-color: rgb(53, 169, 236); /*Propiedad de color RGB*/
+    
+}
+
+header p {
+    text-shadow:10px 10px 15px#000; /*Propiedad que da sombra al texto*/
+}
+
+header nav{
+    display: inline;
+    float: right;
+    text-shadow:10px 10px 15px#000;
+}
+
+
+
+main {
+    padding: 10px 40px 40px 40px;  /*Unidad Absoluta para dar espacio entre el Content y el border 10px arriba, 40px derecha, 40px abajo, 40px izquierda*/
+    border: 4px dotted rgb(3, 179, 248); /*Unidad Absoluta para el contorno que separa el marging y el padding*/
+    font-family: "Oswald", sans-serif;
+    background-color: #ffffff;
+}
+
+main article section nav a {
+    text-decoration: none; /*Propiedad para remover el underline del hipervinculo*/
+}
+
+main article section audio {
+    width: 100%; /*Unidad Relativa que abarca toda la pantalla*/
+}
+
+
+main article section ul {
+    text-transform: capitalize;     /*Propiedad de texto para usar Caps*/
+    word-spacing: 10px; /*Propiedad para separar las palabras*/
+}
+
+main aside hgroup a{
+    text-decoration: none; /*Propiedad para remover el underline del hipervinculo*/
+}
+
+footer {
+    background-color: #dbd6d6; /*Background color para todo el footer*/
+    font-family: "Oswald", sans-serif; /*Misma font para el footer*/
+
+}
+
+footer small h2 {
+    text-align: center; /*Propiedad de Text para alinear al centro*/
+}
+
+footer small article form fieldset legend {
+    text-align: center; /*Propiedad de Text para alinear al centro*/
+
+}
+
+footer small article form fieldset {
+    padding: 10px 10px 10px 10px;  /*Unidad Absoluta para dar espacio entre el contente y el border 10px arriba, 10px derecha, 10px abajo, 10px izquierda*/
+    border: 4px double #666666; /*Border es el espacio ente el padding y el marging*/
+
+}

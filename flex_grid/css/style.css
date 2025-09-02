@@ -1,0 +1,23 @@
+.container {
+    display: flex; /*Con esto activamos el modelo de Flex*/
+    height: 300px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: beige;
+    gap: 20px; /*Propiedad de Flex, deja un espacio entre elementos de 20px*/
+    flex-direction: row; /*Orienta en eje horizontal (Columns), eje vertical (row)*/
+    /*flex-direction: row-reverse; /* Este lo direcciona en el mismo eje, pero iniciando desde la izquierda (ROW) o desde abajo (COLUMNS)*/
+    flex-wrap: wrap; /*Agusta si los elementos caben aun en linea, sino los mueve a la siguiente*/
+    align-items: flex-start; /*Alinea los elementos en el eje transversal, hacia abajo o hacia arriba, o centrados*/
+    /*align items se adapta al heigh del contenedor, si crece ellos tambien se mueven*/
+    justify-content: space-around;
+}
+
+.container article {
+    background-color: rgb(134, 33, 33);
+    padding: 10px;
+    box-sizing: border-box;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-shrink: 3;
+}

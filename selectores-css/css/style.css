@@ -1,0 +1,70 @@
+* { /*Selector Universal, se aplica a todo*/
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+}
+
+article { /*Selector de Elemento, selecciona los elementos por su nombre*/
+    background-color: rgb(152, 224, 230);
+}
+
+p, h1 { /*Selector multiple, si el mismo estilo se le dara a dos elementos diferentes, los agrupamos para no repetir*/
+    font-size: 28px;
+}
+
+h1 { /*Selector de elemento si el estilo es muy especifico */
+    font-weight: 200; /*Propiedad para el peso de la tipografia*/
+}
+
+/*Selector de Clase, a todo elemento al que se le asigne este clase tendra el estilo definido aqui*/
+.btn-main, .hola-mundo { /*Podemos tambien agregar otra clase separada por coma*/
+    color: blueviolet;
+    background-color: black;
+    font-weight: 700;
+}
+
+article .btn-main { /*Seleccionamos un elemento y luego una clase dentro de ese elemento*/
+    font-size: 10px;
+}
+
+article > p { /*Selector de hijo, aplica para las <p> que son hijos directos de <article>*/
+    font-size: 15px;
+}
+
+/*-----------------------------Clase selectores y Atributos--------------------------------------*/
+
+input[type="text"] { /*Selector de atributo */
+    background-color: blue;
+}
+
+button:hover { /*Pseudoclase*/
+    background-color: brown; /*Le doy color rojo cada que se haga hoove sobre el boton*/
+}
+
+article > p:nth-child(2) { /*Pseudocdlase*/
+    font-size: 50px; /*Se le da estilo solo al SEGUNDO P dentro de article*/
+}
+
+/*-------------------------------Clase de especificidad----------------------------------------*/
+.txt {
+    font-style: 20px;
+}
+
+p {
+    font-size: 10px;
+}
+/*En este ejemplo de arriba el estilo que se elige es el de .txt ya que por especificidad tiene mayor valor la clase que el elemento*/
+
+p {
+    font-size: 10px;
+}
+
+.txt {
+    font-style: 20px;
+}
+
+/*En este ejmplo tambien el estilo sera el de .txt, ya que por cascada se toma el ultimo*/
+
+#txt-main {
+    font-size: 5px;
+}
+
+/*Este siempre sera el que lleva mayor prioruidad que es el de ID*/
